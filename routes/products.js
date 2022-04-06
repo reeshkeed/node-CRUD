@@ -46,4 +46,14 @@ router.put('/:id', async (req, res) => {
   res.send(product);
 });
 
+// DELETE: remove a product
+router.delete('/:id', async (req, res) => {
+  // Find product id and remove
+  const product = await Product.findByIdAndRemove(req.params.id);
+  // If id not found return 404
+  if (!product) return res.status(404).send('Product not found');
+
+  res.send(product);
+});
+
 module.exports = router;
