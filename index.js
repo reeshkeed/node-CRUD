@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
-const products = require('./routes/product');
+const products = require('./routes/products');
 
 mongoose
   .connect('mongodb://localhost/ipi')
