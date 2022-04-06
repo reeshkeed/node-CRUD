@@ -56,4 +56,12 @@ router.delete('/:id', async (req, res) => {
   res.send(product);
 });
 
+// GET: return single product
+router.get('/:id', async (req, res) => {
+  const product = await Product.findById(req.params.id);
+  if (!product) return res.status(404).send('Product not found');
+
+  res.send(product);
+});
+
 module.exports = router;
