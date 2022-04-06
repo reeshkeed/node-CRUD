@@ -2,7 +2,7 @@
 
 ## Project Setup
 
-Project uses mongoDB[mongoDB](https://www.mongodb.com/try/download/community), click link to download.
+Project uses [mongoDB](https://www.mongodb.com/try/download/community), click link to download.
 
 ### Clone project
 
@@ -37,7 +37,7 @@ Endpoint:
 Endpoint:
 
 ```
-/api/products/:id
+/api/products/
 ```
 
 JSON request body:
